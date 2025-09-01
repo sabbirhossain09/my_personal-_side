@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, rgb(54, 42, 42) 0%, #322e38 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">Personal portfolio</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium">Projects</a>
+                    <a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium">Experience</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="rounded-full bg-white p-2 w-64 h-64 mx-auto md:mx-0 mb-6 overflow-hidden">
+                        <img src="sabbirpic.png.jpg" alt="Professional portrait of a MERN stack developer with confident smile wearing business casual attire" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+                    </div>
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Full Stack MERN Developer</h1>
+                    <p class="text-xl md:text-2xl mb-6 opacity-90">Building Scalable Web Applications with Modern Technologies</p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <div class="bg-white text-indigo-600 px-6 py-2 rounded-full font-semibold">React.js</div>
+                        <div class="bg-white text-indigo-600 px-6 py-2 rounded-full font-semibold">Node.js</div>
+                        <div class="bg-white text-indigo-600 px-6 py-2 rounded-full font-semibold">MongoDB</div>
+                        <div class="bg-white text-indigo-600 px-6 py-2 rounded-full font-semibold">Express.js</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Sabbir Hossain</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Professional Summary</h3>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Passionate MERN stack developer with expertise in building robust, scalable web applications. 
+                        Specialized in creating seamless user experiences with React.js and crafting efficient backend 
+                        solutions with Node.js and MongoDB. Committed to writing clean, maintainable code and staying 
+                        updated with the latest industry trends.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <strong class="text-gray-800">Location:</strong>
+                            <p class="text-gray-600">Dhaka, Bangladesh</p>
+                        </div>
+                        <div>
+                            <strong class="text-gray-800">Experience:</strong>
+                            <p class="text-gray-600">3+ Years</p>
+                        </div>
+                        <div>
+                            <strong class="text-gray-800">Email:</strong>
+                            <p class="text-gray-600">sabb18145@gmail.com@email.com</p>
+                        </div>
+                        <div>
+                            <strong class="text-gray-800">Availability:</strong>
+                            <p class="text-gray-600">Open to Opportunities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Core Competencies</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-gray-800 font-semibold">Full Stack Development</span>
+                            <p class="text-gray-600">End-to-end web application development using MERN stack</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-800 font-semibold">API Design & Development</span>
+                            <p class="text-gray-600">RESTful API design and implementation</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-800 font-semibold">Database Management</span>
+                            <p class="text-gray-600">MongoDB schema design and optimization</p>
+                        </div>
+                        <div>
+                            <span class="text-gray-800 font-semibold">DevOps & Deployment</span>
+                            <p class="text-gray-600">Cloud deployment and CI/CD pipelines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Technical Skills</h2>
+            
+            <!-- MERN Stack Skills -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-8 text-indigo-600 text-center">MERN Stack Expertise</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                        <i class="fab fa-react text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-semibold mb-2">React.js</h4>
+                        <p class="text-gray-600 text-sm">Hooks, Context API, Redux, Next.js</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                        <i class="fab fa-node-js text-4xl text-green-500 mb-4"></i>
+                        <h4 class="font-semibold mb-2">Node.js</h4>
+                        <p class="text-gray-600 text-sm">Express.js, REST APIs, Authentication</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                        <i class="fas fa-database text-4xl text-green-600 mb-4"></i>
+                        <h4 class="font-semibold mb-2">MongoDB</h4>
+                        <p class="text-gray-600 text-sm">Mongoose, Aggregation, Indexing</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
+                        <i class="fas fa-server text-4xl text-gray-600 mb-4"></i>
+                        <h4 class="font-semibold mb-2">Express.js</h4>
+                        <p class="text-gray-600 text-sm">Middleware, Routing, Security</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Skills -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 text-indigo-600 text-center">Additional Technologies</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <i class="fab fa-js-square text-3xl text-yellow-500 mb-2"></i>
+                        <span class="text-sm font-semibold">JavaScript ES6+</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <i class="fab fa-html5 text-3xl text-orange-500 mb-2"></i>
+                        <span class="text-sm font-semibold">HTML5</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <i class="fab fa-css3-alt text-3xl text-blue-500 mb-2"></i>
+                        <span class="text-sm font-semibold">CSS3</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <i class="fab fa-git-alt text-3xl text-red-500 mb-2"></i>
+                        <span class="text-sm font-semibold">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3441703-4de0-4495-9ff0-eac5736836d8.png" alt="E-commerce dashboard interface showing product management, order tracking, and analytics in modern web design" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-indigo-600">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">Full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3e1df024-f7ee-4ee5-a00a-f3f756794448.png" alt="Task management application interface with drag-and-drop functionality and team collaboration features" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-indigo-600">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">Real-time collaborative task management application</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Socket.io</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Express</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8c8f5fbc-e7ac-42cb-bba6-47e0e055f5c3.png" alt="Social media platform interface with user profiles, news feed, and messaging capabilities" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-indigo-600">Social Media Platform</h3>
+                        <p class="text-gray-600 mb-4">Social networking site with user authentication and real-time features</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Next.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">MongoDB</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">JWT</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Work Experience</h2>
+            
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-indigo-600">juniour MERN Developer</h3>
+                        <span class="text-gray-500">2000 - optional time_Present</span>
+                    </div>
+                    <p class="text-gray-600 font-semibold mb-4">Tech Solutions Ltd.</p>
+                    <ul class="text-gray-600 space-y-2 list-disc list-inside">
+                        <li>Led development of 5+ full-stack applications using MERN stack</li>
+                        <li>Implemented RESTful APIs serving 50 plus </li>
+                        <li>Reduced server response time by 40% through database optimization</li>
+                        <li>Mentored 3 junior developers in modern web development practices</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-indigo-600">Full Stack Developer</h3>
+                        <span class="text-gray-500">2020 - 2022</span>
+                    </div>
+                    <p class="text-gray-600 font-semibold mb-4">Digital Innovations Inc.</p>
+                    <ul class="text-gray-600 space-y-2 list-disc list-inside">
+                        <li>Developed and maintained 3 enterprise-level web applications</li>
+                        <li>Integrated third-party APIs including payment gateways and SMS services</li>
+                        <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                        <li>Collaborated with UX team to improve user engagement by 25%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Education</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Bachelor of Computer Science</h3>
+                    <p class="text-gray-600 font-semibold mb-2">American International University _Bangladesh</p>
+                    <p class="text-gray-500 mb-4">2022 - 2026</p>
+                    <p class="text-gray-600">70% marks</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Certifications</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• MongoDB Certified Developer</li>
+                        <li>• AWS Certified Developer - Associate</li>
+                        <li>• React Developer Certification</li>
+                        <li>• Node.js Best Practices Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Let's Connect</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+                    <p class="mb-6 opacity-90">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-2xl mr-4"></i>
+                            <span>sabb18145@gmail.com@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-2xl mr-4"></i>
+                            <span>+880 1854215041</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl mr-4"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="bg-white text-indigo-600 p-3 rounded-full hover:bg-gray-100">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-white text-indigo-600 p-3 rounded-full hover:bg-gray-100">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="bg
